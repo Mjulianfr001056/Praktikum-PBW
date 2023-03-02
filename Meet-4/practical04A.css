@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+nav ol {
+  list-style: none;
+  background-color: #AAB;
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0%;
+}
+
+nav li {
+  background-color: #CCD;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: yellow;
+}
+
+
+body {
+  font-family:'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  color: Navy;
+  margin-top: 1em;
+}
+
+#bag1 p{
+    background-color: lightyellow;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border-radius: 1em;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: Navy;
+}
+
+#bag2>p{
+  margin: 0 0;
+}
+
+#bag2 ul{
+  margin: 0 0;
+  list-style-position: inside;
+  text-indent: 0em;
+  padding-left: 0em;
+}
+
+#bag3>p{
+  margin: 0 0;
+}
+
+#bag3 ol {
+  list-style: none;
+  counter-reset: item;
+  padding-left: 0;
+}
+
+#bag3 li {
+  display: block;
+}
+
+#bag3 li:before {
+  counter-increment: item;
+  content: counters(item, ".") " ";
+  padding-right: 0.5em;
+  text-align: left;
+  display: inline-block;
+  width: 1.5em;
+}
+
+dt{
+  background-color: navy;
+  color: white;
+  border-radius: 1em 1em 0 0;
+  width: auto;
+  padding: 0.5em;
+}
+
+dd {
+  margin: 0;
+  padding: 0.5em;
+  background-color: #CCD;
+  border-radius: 0 0 1em 1em;
+}
+
+.box{
+  margin: 0.5em 0;
+}
+
+
+
+
+

@@ -1,0 +1,55 @@
+nav{
+    background-color: black;
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+    width: 100%;
+    margin: 0;
+}
+
+li{
+    float:left;
+    margin:0;
+}
+
+nav a{
+    height: 30px;
+    padding: 5px 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.active{
+    background-color: #C74451;
+}
+
+#post-lists{
+    list-style: none;
+}
+.judul{
+    font-weight: bold;
+}
+
+.tanggal{
+    font-style: italic;
+}
+
+article{
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    padding: 0.5em 1em;
+}
+
+.mark{
+    clear:left;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.mark p{
+    padding:0;
+    margin:0;
+}

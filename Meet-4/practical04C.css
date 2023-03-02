@@ -1,0 +1,77 @@
+nav {
+    background-color: black;
+    overflow: hidden;
+    height: 2em;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+}
+
+nav li {
+    float: left;
+    margin: 0;
+}
+
+nav a {
+    padding: 1.5em 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+aside ol{
+    list-style: none;
+    padding-top: 0.5em;
+    margin-top: 15.5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 0px;
+}
+
+.active {
+    background-color: #C74451;
+}
+
+#post-lists {
+    list-style: none;
+    padding: 0;
+}
+
+.judul {
+    font-weight: bold;
+}
+
+.tanggal {
+    font-style: italic;
+}
+
+article {
+    padding: 0.5em 1em;
+}
+
+hr{
+    border-top: 0.5px solid lightgray;
+}
+
+.mark {
+    clear: left;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.mark p{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 1em;
+    margin: 0;
+}
+
