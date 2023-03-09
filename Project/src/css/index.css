@@ -1,0 +1,28 @@
+.container{
+    background-color: #062c80;
+    color: white;
+}
+
+.container ol{
+    display:flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.container li{
+    display: block;
+    padding: 0.5em 3em;
+}
+
+.container li:hover{
+    background-color: #f6f5da;
+    color: black;
+}
+
+.footprint{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
