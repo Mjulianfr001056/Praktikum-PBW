@@ -2,9 +2,23 @@
 <html lang="en-GB">
   <head>
     <title>JavaScript 07C</title>
+    <style>
+      td {
+        border: 1px solid black;
+        padding-left: 0.5em;
+
+      }
+      #myTable {
+        border-spacing: 0;
+      }
+    </style>
   </head>
 
   <body>
+    <table id="myTable" ,>
+      <!-- table rows and cells will be inserted dynamically by JavaScript code -->
+    </table>
+
     <script>
       Array.prototype.toString = function () {
         var arrStr = "[";
@@ -29,18 +43,78 @@
         null,
         [0],
       ];
+      var table = document.getElementById("myTable");
+        
+      // loop through the values array and generate the table rows and cells
       for (var i = 0; i < values.length; i++) {
-        document.writeln(
-          i + ") The type of " + values[i] + " is: " + typeof values[i] + "<br>"
-        );
-      }
-      document.writeln(
-        i + ") The type of " + values + " is: " + typeof values + "<br>"
-      );
-      document.writeln("Elements of values are: " + values.join()+"<br>") 
+        for (var j = 0; j < values.length; j++) {
+          var row = table.insertRow();
+          var cell = row.insertCell();
+          var text = document.createTextNode(
+            "(" +
+              typeof values[i] +
+              ")" +
+              values[i] +
+              " == " +
+              "(" +
+              typeof values[j] +
+              ")" +
+              values[j] +
+              ": " +
+              (i == j)
+          );
+          cell.appendChild(text);
 
+          cell = row.insertCell();
+          text = document.createTextNode(
+            "(" +
+              typeof values[i] +
+              ")" +
+              values[i] +
+              " === " +
+              "(" +
+              typeof values[j] +
+              ")" +
+              values[j] +
+              ": " +
+              (i === j)
+          );
+          cell.appendChild(text);
+
+          cell = row.insertCell();
+          text = document.createTextNode(
+            "(" +
+              typeof values[i] +
+              ")" +
+              values[i] +
+              " < " +
+              "(" +
+              typeof values[j] +
+              ")" +
+              values[j] +
+              ": " +
+              (i < j)
+          );
+          cell.appendChild(text);
+
+          cell = row.insertCell();
+          text = document.createTextNode(
+            "(" +
+              typeof values[i] +
+              ")" +
+              values[i] +
+              " > " +
+              "(" +
+              typeof values[j] +
+              ")" +
+              values[j] +
+              ": " +
+              (i > j)
+          );
+          cell.appendChild(text);
+        }
+      }
     </script>
     <noscript>JavaScript not supported or disabled</noscript>
-    
   </body>
 </html>
